@@ -55,7 +55,7 @@ body {
     transition: all .5s;
 }
 
-#next {
+#next-btn {
     background-color: #001e4d;
     color: #fff;
     font-weight: 500;
@@ -67,11 +67,11 @@ body {
     cursor: pointer;
 }
 
-#next:hover {
+#next-btn:hover {
     background-color: #112f5e;
 }
 
-#next:active {
+#next-btn:active {
     background-color: #223f6f;
 }
 

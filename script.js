@@ -1,4 +1,4 @@
-const question = [
+const questions = [
     {
         question: "Which is the largest animal in the world?",
         answers: [
@@ -43,7 +43,7 @@ const question = [
 
 const questionElement = document.getElementById('question');
 const answerButton = document.getElementById('answer-buttons');
-const nextButton = document.getElementById('next');
+const nextButton = document.getElementById('next-btn');
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -51,7 +51,7 @@ let score = 0;
 function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
-    next.innerHTML = "Next";
+    nextButton.innerHTML = "Next";
     showQuestion();
 }
 
@@ -72,6 +72,8 @@ function showQuestion() {
         button.addEventListener("click", selectAnswer);
     });
 }
+
+startQuiz();
 
 function resetState() {
     next.style.display = "none";
@@ -123,4 +125,3 @@ next.addEventListener("click", () => {
     }
 })
 
-startQuiz();
